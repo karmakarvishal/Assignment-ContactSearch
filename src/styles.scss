@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+/* Ensure styles are applied to the mat-table */
+.mat-table .mat-row:hover {
+    background-color: whitesmoke !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mat-table .mat-row:active {
+    background-color: #efefef !important;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Table styling */
+  .mat-header-cell {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .table-bordered {
+    border: 1px solid #ddd;
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+  }
+  
+  /* Optional: Add custom styling for pagination */
+  .mat-paginator {
+    margin-top: 20px;
+  }
+  
